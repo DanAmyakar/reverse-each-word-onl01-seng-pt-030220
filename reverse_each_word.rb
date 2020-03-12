@@ -32,3 +32,4 @@ def reverse_each_word2(wrds)
 
 end
 
+reverse_each_word2("Making sure it works!")
