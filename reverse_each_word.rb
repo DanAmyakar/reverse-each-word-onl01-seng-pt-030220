@@ -18,7 +18,7 @@ def reverse_wrds(wrds)
   rvs_wrds2 = []
   sm_strng2 = wrds.split(" ")
   sm_strng2.collect {|wrd| wrd.reverse}
-  yield sm_strng2.join(" ")
+  print sm_strng2.join(" ")
 end
 
 reverse_wrds("Does thisthing even work?")
