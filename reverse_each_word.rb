@@ -24,7 +24,7 @@ def reverse_wrds(wrds)
 
   rvs_wrds2 = wrds.split(" ")
 
-  rvs_wrds2.map do |wrd|
+  rvs_wrds2.collect do |wrd|
     (wrd).reverse!
   end
 
