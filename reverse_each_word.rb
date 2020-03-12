@@ -26,6 +26,7 @@ def reverse_wrds(wrds)
 
   rvs_wrds2.collect do |wrd|
     (wrd).reverse!
+  end
 
   print rvs_wrds2.join(" ")
 
