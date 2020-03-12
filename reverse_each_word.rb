@@ -31,5 +31,3 @@ def reverse_wrds(wrds)
   print rvs_wrds2.join(" ")
 
 end
-
-reverse_wrds("Does this thing even work?")
