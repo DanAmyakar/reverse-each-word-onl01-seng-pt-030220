@@ -22,9 +22,6 @@ end
 # Create a method that takes a string arg
 def reverse_wrds(wrds)
 
-  # Creates an array for the collected values
-  rvs_wrds2 = []
-
   sm_strng = wrds.split(" ")
 
   rvs_wrds2 = sm_strng.collect do |wrd|
