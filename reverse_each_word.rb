@@ -25,7 +25,7 @@ def reverse_each_word2(wrds)
   sm_strng = wrds.split(" ")
 
   rvs_wrds2 = sm_strng.collect do |wrd|
-    wrd.revese!
+    wrd.reverse!
   end
 
   return rvs_wrds2.join(" ")
