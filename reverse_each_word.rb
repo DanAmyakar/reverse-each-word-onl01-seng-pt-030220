@@ -20,7 +20,7 @@ def reverse_each_word(wrds)
 end
 
 # Create a method that takes a string arg
-def reverse_wrds(wrds)
+def reverse_each_word(wrds)
 
   sm_strng = wrds.split(" ")
 
