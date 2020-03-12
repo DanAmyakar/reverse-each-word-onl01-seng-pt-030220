@@ -22,10 +22,13 @@ end
 # Create a method that takes a string arg
 def reverse_wrds(wrds)
 
-  rvs_wrds2 = wrds.split(" ")
+  # Creates an array for the collected values
+  rvs_wrds2 = []
 
-  rvs_wrds2.collect do |wrd|
-    (wrd).reverse!
+  sm_strng = wrds.split(" ")
+
+  sm_strng.collect do |wrd|
+    rvs_wrds2 << (wrd).reverse!
   end
 
   return rvs_wrds2.join(" ")
