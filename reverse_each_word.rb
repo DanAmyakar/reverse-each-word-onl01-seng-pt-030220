@@ -1,24 +1,34 @@
 # Creating a method that takes a string arg
 def reverse_each_word(wrds)
   
+  # creates an array from the motified wrds
   rvs_wrds = []
   
   # Creates an array from the string...
   sm_strng = wrds.split(" ")
   
-  # should reverse each elements value
+  # Reverses each elements value
   sm_strng.each do |wrd|
+    
+    #stores them in an array
     rvs_wrds << wrd.reverse  
   end
   
+  #returns and joins our modified wrds with a space between them
   return rvs_wrds.join(" ")
+
 end
 
+# Create a method that takes a string arg
 def reverse_wrds(wrds)
-  rvs_wrds2 = []
-  sm_strng2 = wrds.split(" ")
-  sm_strng2.collect {|wrd| wrd.reverse}
-  print sm_strng2.join(" ")
+
+  rvs_wrds2 = wrds.split(" ")
+
+  rvs_wrds2.collect do |wrd|
+    (wrd).reverse!
+
+  print rvs_wrds2.join(" ")
+
 end
 
-reverse_wrds("Does thisthing even work?")
+reverse_wrds("Does this thing even work?")
